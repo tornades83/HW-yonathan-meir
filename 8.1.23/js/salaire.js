@@ -23,7 +23,7 @@ if (solde <= loyer) {
 } alert("fevrier")
 var solde = solde - 500;
 var mois = mois ++;
-if(solde , 0){
+if(solde < 0){
     var gift = true;
     var montant =solde * -1;
 }else{
