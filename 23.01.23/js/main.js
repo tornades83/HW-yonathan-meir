@@ -1,35 +1,33 @@
-var fullName = [];
-var email = [];
-var pass = [];
-for (let i = 0; i < 3; i++) {
-    const element = qty[i];
-    var fullName = prompt("enter your name ");
-    var email = prompt("enter your email");
-    var pass = prompt("enter your password");
-    fullName.push(fullName);
-    email.push(email);
-    pass.push(pass);
-
-}
-
-
-
 var appDiv = document.getElementById("main");
-const user = { fullName: "yonathan Roos", email: "yonathan@roos.com", pass: "yonr2283" };
+const Users = [
+    {
+        fullName: "Serge Talla",
+        email: "serge@talla.com", 
+        pass: "manitou.123", },
+        {
+            fullName: "Yonathan Roos",
+            email: "yon@roos.com", 
+            pass: "lerabin.123", },
+            {
+                fullName: "Lea Mizrahi",
+                email: "lea@mizrahi.com", 
+                pass: "iluvjs.123", }  
+];
 
-init(); fb
+
+init();
 
 function init()
-var loginSection = document.createElement("section");
-var emailDiv = document.createElement("div");
-var emailLabel = document.createElement("label");
-emailLabel.inertText = "Enter your email";
+var loginSection = document.createElement("section")
+var emailDiv = document.createElement("div")
+var emailLabel = document.createElement("label")
+    emailLabel.inertText = "Enter your email";
 var emailInput = document.createElement("input");
-emailLabel.append(emailInput);
-emailDiv.append(emailLabel);
-loginSection.append(emailDiv);
+    emailLabel.append(emailInput);
+    emailDiv.append(emailLabel);
+    loginSection.append(emailDiv);
 
-emailInput.addEventListener("input", checkEmail);
+    emailInput.addEventListener("input", checkEmail);
 
 function checkEmail() {
     if (emailInput.value.includes("@") && emailInput.value.includes(".com")) {
@@ -67,13 +65,20 @@ function checkEmail() {
     btn.addEventListener("click", login);
 
     function login() {
+      for (let i = 0; i < Users.length; i++) {
+        const user = Users[i];
+        
+     
         if (emailInput.value.toLowerCase().replaceAll(" ", "") === user.email && passDiv.value === user.pass) {
-            goToDashboard()
-        } else {
-            alert("wrong ");
-        }
+            goToDashboard(loginSection);
+            return;
+         
+      }
+        
+       tries++;
+        alert("wrong ");
     }
-
+    }
     appDiv.append(loginSection)
 
 

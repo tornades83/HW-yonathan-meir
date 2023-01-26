@@ -30,15 +30,16 @@ function createForm() {
             price.input.value = "";
             categories.input.value = "";
         } else {
-            redBorder(obj);
+             redBorder = obj ;
         }
     }
     function redBorder(obj) {
-        obj.input = invalid(obj.model.length == 0 && obj.brand.length == 0 && obj.price.length == 0);
+        obj.redBorder.input = invalid(obj.model.length == 0 && obj.brand.length == 0 && obj.price.length == 0) ;
         var border = 2, dashed, red;
-
-        obj.input = valid(obj.model.length == 0 && obj.brand.length == 0 && obj.price.length == 0);
+        
+        obj.redBorder.input = valid(obj.model.length && obj.brand.length && obj.price.length) ;
         var border = 1, solid, black;
+        
         return obj;
 
     }
