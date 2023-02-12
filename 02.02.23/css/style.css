@@ -1,0 +1,41 @@
+.blue {
+    color: blue;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+/* .haut {
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-content: flex-start; 
+   width: 20px;
+   height: 20px;
+
+}
+.milieu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:center ;
+    width: 20px;
+    height: 20px;
+}
+.bas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+    width: 20px;
+    height: 20px;
+}
+.zero {
+    display: flex;
+    justify-content: center;
+    align-content: end;
+    width: 20px;
+    height: 20px;
+} */
