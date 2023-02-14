@@ -4,7 +4,7 @@ class row {
         this.row.className = "row ";
         if (_id) this.row.id = _id;
         if (_class) this.row.className += _class;
-        _cols.forEach((x)=> {
+        _cols.forEach((x) => {
             this.row.append(x.col);
         });
     }
@@ -23,12 +23,12 @@ class input {
     constructor(_id, _class, _label, _type, _placeholder = "") {
         this.div = document.createElement("div");
         this.div.className = "input-field col ";
-        if(_class) this.div.className += _class;
+        if (_class) this.div.className += _class;
         this.input = document.createElement("input");
         this.input.id = _id;
         this.input.type = _type;
         this.input.placeholder = _placeholder;
-        this._label =document.createElement("label");
+        this._label = document.createElement("label");
         this._label.for = _id;
         this._label.innerText = _label;
         this.div.append(this.input, this.label);
@@ -70,8 +70,7 @@ colArr[1].col.append(emailInput.div, passInput.div, loginBtn.btn);
 var userArray = [];
 var userJSON = localStorage.getItem("theUsers");
 var userArray = JSON.parse(userJSON);
-var userJSON = localStorage.getItem("theUsers"); 
-if (userJSON != null) { 
-userArray = JSON.parse(userJSON);
+var userJSON = localStorage.getItem("theUsers");
+if (userJSON != null) {
+    userArray = JSON.parse(userJSON);
 }
-localStorage.removeItem("theUser");
