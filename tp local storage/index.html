@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>tp local storage</title>
+</head>
+<body>
+    <div id="main"></div>
+    <div id="auth-page">
+        <div class="forms" id="register">
+          <h2>Register Now !</h2>
+          <input type="text" id="firstName" placeholder="First Name" />
+          <input type="text" id="lastName" placeholder="Last Name" />
+          <input type="email" id="email" placeholder="Your Email" />
+          <input type="password" id="password" placeholder="Strong Password" />
+          <button id="register-btn">Create an Account</button>
+        </div>
+        <div class="forms" id="login" style="display: none">
+          <h2>Please Login</h2>
+          <input type="email" id="emailLogin" placeholder="Your Email" />
+          <input type="password" id="passwordLogin" placeholder="Your Password" />
+          <button id="login-btn">Login</button>
+        </div>
+        <div id="choice-text">Already have an account?</div>
+      </div>
+      <div id="home-page" style="display: none"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"> type="module"</script>
+</body>
+</html>
